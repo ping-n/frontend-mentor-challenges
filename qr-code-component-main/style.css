@@ -1,0 +1,85 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--light-grey);
+  color: var(--grayish-blue);
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 1.5em;
+  width: 28rem;
+  height: 45rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card-image {
+  padding: 1em 1em 0.5em 1em;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.card-text {
+  padding: 1em;
+  text-align: center;
+}
+
+.card-text h1 {
+  color: var(--dark-blue);
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.card-text p {
+  font-size: 1.4em;
+  margin: 0 1.2em;
+}
+
+.attribution {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: limegreen;
+}
