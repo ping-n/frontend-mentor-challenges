@@ -96,14 +96,13 @@ main {
   width: 6rem;
   height: 6rem;
   background: var(--neon-green) no-repeat center;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: -3rem;
   cursor: pointer;
 }
 
 .card-action img {
-  width: 35%;
+  width: 45%;
+  object-fit: contain;
 }
 
 .card-action:hover {
@@ -128,8 +127,34 @@ footer {
   color: var(--neon-green);
 }
 
-/* Mobile */
+/* Animation */
+.spin-in {
+  animation: spin-in 0.4s linear;
+}
 
+.spin-out {
+  animation: spin-out 0.4s linear;
+}
+
+@keyframes spin-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 768px) {
   .card {
     width: 90%;

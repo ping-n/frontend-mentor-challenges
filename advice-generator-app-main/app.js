@@ -15,4 +15,13 @@ const getAdvice = async () => {
 
 window.addEventListener("load", getAdvice());
 
-btn.addEventListener("click", () => getAdvice());
+btn.addEventListener("click", () => {
+  if (!btn.classList.contains("spin-in")) {
+    btn.classList.remove("spin-out");
+    btn.classList.add("spin-in");
+  } else {
+    btn.classList.remove("spin-in");
+    btn.classList.add("spin-out");
+  }
+  getAdvice();
+});
