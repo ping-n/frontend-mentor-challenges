@@ -60,7 +60,7 @@ main {
 }
 
 .card-header h1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 5px;
 }
@@ -93,13 +93,17 @@ main {
   position: absolute;
   border: none;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  background-color: var(--neon-green);
+  width: 6rem;
+  height: 6rem;
+  background: var(--neon-green) no-repeat center;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2.5rem;
+  bottom: -3rem;
   cursor: pointer;
+}
+
+.card-action img {
+  width: 35%;
 }
 
 .card-action:hover {
@@ -132,7 +136,7 @@ footer {
   }
 
   .card-header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .card-body p {
