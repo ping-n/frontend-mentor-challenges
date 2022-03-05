@@ -48,7 +48,7 @@ main {
   background-color: var(--dark-grayish-blue);
   height: 60%;
   width: 40%;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   padding: 4rem;
 }
 
@@ -96,8 +96,14 @@ main {
   width: 5rem;
   height: 5rem;
   background-color: var(--neon-green);
-  bottom: -2.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2.5rem;
   cursor: pointer;
+}
+
+.card-action:hover {
+  box-shadow: 0 0 2rem var(--neon-green);
 }
 
 /* Footer */
@@ -116,4 +122,20 @@ footer {
 
 .attribution a {
   color: var(--neon-green);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .card-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-body p {
+    font-size: 2rem;
+  }
 }
